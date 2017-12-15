@@ -3,8 +3,8 @@ package befaster.solutions;
 public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
-        boolean multiply3 = number % 3 == 0;
-        boolean multiply5 = number % 5 == 0;
+        boolean multiply3 = number % 3 == 0 || String.valueOf(number).contains("3");
+        boolean multiply5 = number % 5 == 0 || String.valueOf(number).contains("5");
 
         if (multiply3 && multiply5) {
             return "fizz buzz";
