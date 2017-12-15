@@ -13,7 +13,7 @@ public class FizzBuzz {
         for (char c : String.valueOf(number).toCharArray()) {
             set.add(c);
         }
-        boolean isSameCharater = set.size() == 1;
+        boolean isSameCharater = set.size() == 1 && number > 10;
 
         if (multiply3 && multiply5 && isSameCharater) {
             return "fizz buzz deluxe";
