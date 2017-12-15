@@ -24,7 +24,7 @@ public class FizzBuzz {
         } else if (multiply5) {
             return "buzz";
         } else if (isSameCharater) {
-            return "buzz";
+            return "deluxe";
         } else {
             return String.valueOf(number);
         }
