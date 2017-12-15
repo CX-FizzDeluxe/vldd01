@@ -12,16 +12,16 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzzTest() {
-        String result = FizzBuzz.fizzBuzz(11);
-        Assert.assertEquals("fake deluxe", result);
+        String result = FizzBuzz.fizzBuzz(15);
+        Assert.assertEquals("fizz fake deluxe buzz fake deluxe", result);
 
-        result = FizzBuzz.fizzBuzz(33);
-        Assert.assertEquals("fizz fake deluxe", result);
+        result = FizzBuzz.fizzBuzz(30);
+        Assert.assertEquals("fizz deluxe buzz deluxe", result);
 
-        result = FizzBuzz.fizzBuzz(222);
+        result = FizzBuzz.fizzBuzz(35);
         Assert.assertEquals("fizz deluxe", result);
 
-        result = FizzBuzz.fizzBuzz(777);
+        result = FizzBuzz.fizzBuzz(3);
         Assert.assertEquals("fizz fake deluxe", result);
     }
 }

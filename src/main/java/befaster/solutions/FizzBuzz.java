@@ -10,14 +10,14 @@ public class FizzBuzz {
         boolean multiply3 = number % 3 == 0 || String.valueOf(number).contains("3");
         boolean multiply5 = number % 5 == 0 || String.valueOf(number).contains("5");
 
-        String result = (multiply3 || multiply5) ? number % 2 == 1 ? " fake deluxe" : " deluxe" : "";
+        String deluxeResult = (multiply3 || multiply5) ? number % 2 == 1 ? " fake deluxe" : " deluxe" : "";
 
         if (multiply3 && multiply5) {
-            return "fizz".concat(result).concat(" buzz").concat(result);
+            return "fizz".concat(deluxeResult).concat(" buzz").concat(deluxeResult);
         } else if (multiply3) {
-            return "fizz".concat(result);
+            return "fizz".concat(deluxeResult);
         } else if (multiply5) {
-            return "buzz".concat(result);
+            return "buzz".concat(deluxeResult);
         } else {
             return String.valueOf(number);
         }
