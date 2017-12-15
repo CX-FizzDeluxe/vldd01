@@ -19,7 +19,7 @@ public class FizzBuzzTest {
         Assert.assertEquals("fizz deluxe buzz deluxe", result);
 
         result = FizzBuzz.fizzBuzz(35);
-        Assert.assertEquals("fizz deluxe", result);
+        Assert.assertEquals("fizz fake deluxe buzz fake deluxe", result);
 
         result = FizzBuzz.fizzBuzz(3);
         Assert.assertEquals("fizz fake deluxe", result);
