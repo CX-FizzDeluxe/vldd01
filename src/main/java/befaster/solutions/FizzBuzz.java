@@ -13,7 +13,7 @@ public class FizzBuzz {
         String deluxeResult = ((number % 3 == 0 && String.valueOf(number).contains("3")) || (number % 5 == 0 && String.valueOf(number).contains("5"))) ? number % 2 == 1 ? " fake deluxe" : " deluxe" : "";
 
         if (multiply3 && multiply5) {
-            return "fizz".concat(deluxeResult).concat(" buzz").concat(deluxeResult);
+            return "fizz".concat(" buzz").concat(deluxeResult);
         } else if (multiply3) {
             return "fizz".concat(deluxeResult);
         } else if (multiply5) {

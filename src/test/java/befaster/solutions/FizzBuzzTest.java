@@ -17,6 +17,11 @@ public class FizzBuzzTest {
                  - {"method":"fizz_buzz","params":[13],"id":"FIZ_R5_010"}, expected: "fizz", got: "13"
      - {"method":"fizz_buzz","params":[43],"id":"FIZ_R5_011"}, expected: "fizz", got: "43"
      - {"method":"fizz_buzz","params":[163],"id":"FIZ_R5_012"}, expected: "fizz", got: "163"
+
+
+      - {"method":"fizz_buzz","params":[30],"id":"FIZ_R5_038"}, expected: "fizz buzz deluxe", got: "fizz deluxe buzz deluxe"
+ - {"method":"fizz_buzz","params":[3510],"id":"FIZ_R5_039"}, expected: "fizz buzz deluxe", got: "fizz deluxe buzz deluxe"
+ - {"method":"fizz_buzz","params":[15],"id":"FIZ_R5_040"}, expected: "fizz buzz fake deluxe", got: "fizz fake deluxe buzz fake deluxe"
         */
     @Test
     public void fizzBuzzTest() {
@@ -37,6 +42,19 @@ public class FizzBuzzTest {
 
         result = FizzBuzz.fizzBuzz(163);
         Assert.assertEquals("fizz", result);
+
+
+        result = FizzBuzz.fizzBuzz(30);
+        Assert.assertEquals("fizz buzz deluxe", result);
+
+
+        result = FizzBuzz.fizzBuzz(3510);
+        Assert.assertEquals("fizz buzz deluxe", result);
+
+
+        result = FizzBuzz.fizzBuzz(15);
+        Assert.assertEquals("fizz buzz fake deluxe", result);
+
 
     }
 }
