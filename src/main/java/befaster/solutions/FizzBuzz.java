@@ -1,11 +1,19 @@
 package befaster.solutions;
 
-import befaster.runner.SolutionNotImplementedException;
-
 public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
-        throw new SolutionNotImplementedException();
-    }
+        boolean multiply3 = number % 3 == 0;
+        boolean multiply5 = number % 5 == 0;
 
+        if (multiply3 && multiply5) {
+            return "fizz buzz";
+        } else if (multiply3) {
+            return "fizz";
+        } else if (multiply5) {
+            return "buzz";
+        } else {
+            return String.valueOf(number);
+        }
+    }
 }
