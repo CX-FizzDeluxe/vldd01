@@ -23,6 +23,8 @@ public class FizzBuzz {
             return "fizz";
         } else if (multiply5) {
             return "buzz";
+        } else if (isSameCharater) {
+            return "buzz";
         } else {
             return String.valueOf(number);
         }
