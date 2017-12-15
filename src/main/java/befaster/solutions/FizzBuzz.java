@@ -18,14 +18,8 @@ public class FizzBuzz {
             return "fizz".concat(result);
         } else if (multiply5) {
             return "buzz".concat(result);
-        } else if (isSameCharater) {
-            return result.trim();
         } else {
             return String.valueOf(number);
         }
-    }
-
-    private static String checkDeluxeType(Integer number) {
-
     }
 }
