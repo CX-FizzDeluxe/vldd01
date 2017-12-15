@@ -9,19 +9,21 @@ import static org.junit.Assert.*;
  * Created by rafal on 15/12/2017.
  */
 public class FizzBuzzTest {
-
+/*
+     - {"method":"fizz_buzz","params":[27],"id":"FIZ_R5_006"}, expected: "fizz", got: "fizz fake deluxe"
+            - {"method":"fizz_buzz","params":[129],"id":"FIZ_R5_007"}, expected: "fizz", got: "fizz fake deluxe"
+            - {"method":"fizz_buzz","params":[201],"id":"FIZ_R5_008"}, expected: "fizz", got: "fizz fake deluxe"
+    */
     @Test
     public void fizzBuzzTest() {
-        String result = FizzBuzz.fizzBuzz(15);
-        Assert.assertEquals("fizz fake deluxe buzz fake deluxe", result);
+        String result = FizzBuzz.fizzBuzz(27);
+        Assert.assertEquals("fizz", result);
 
-        result = FizzBuzz.fizzBuzz(30);
-        Assert.assertEquals("fizz deluxe buzz deluxe", result);
+        result = FizzBuzz.fizzBuzz(129);
+        Assert.assertEquals("fizz", result);
 
-        result = FizzBuzz.fizzBuzz(35);
-        Assert.assertEquals("fizz fake deluxe buzz fake deluxe", result);
+        result = FizzBuzz.fizzBuzz(201);
+        Assert.assertEquals("fizz", result);
 
-        result = FizzBuzz.fizzBuzz(3);
-        Assert.assertEquals("fizz fake deluxe", result);
     }
 }
