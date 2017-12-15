@@ -9,16 +9,11 @@ public class FizzBuzz {
     public static String fizzBuzz(Integer number) {
         boolean multiply3 = number % 3 == 0 || String.valueOf(number).contains("3");
         boolean multiply5 = number % 5 == 0 || String.valueOf(number).contains("5");
-        Set<Character> set = new HashSet<>();
-        for (char c : String.valueOf(number).toCharArray()) {
-            set.add(c);
-        }
-        boolean isSameCharater = set.size() == 1 && number > 10;
-
-        String result = isSameCharater ? (number % 2 == 1 ? " fake deluxe" : " deluxe") : "";
+        
+        String result = number % 2 == 1 ? " fake deluxe" : (number % 3 == 0 || number % 5 == 0) ? " deluxe" : "";
 
         if (multiply3 && multiply5) {
-            return "fizz buzz".concat(result);
+            return "fizz".concat(result).concat(" buzz").concat(result);
         } else if (multiply3) {
             return "fizz".concat(result);
         } else if (multiply5) {
@@ -28,5 +23,9 @@ public class FizzBuzz {
         } else {
             return String.valueOf(number);
         }
+    }
+
+    private static String checkDeluxeType(Integer number) {
+
     }
 }
