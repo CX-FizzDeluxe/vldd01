@@ -15,7 +15,7 @@ public class FizzBuzz {
         }
         boolean isSameCharater = set.size() == 1 && number > 10;
 
-        String result = isSameCharater ? " deluxe" : "";
+        String result = isSameCharater ? (number % 2 == 1 ? " fake deluxe" : " deluxe") : "";
 
         if (multiply3 && multiply5) {
             return "fizz buzz".concat(result);
@@ -24,7 +24,7 @@ public class FizzBuzz {
         } else if (multiply5) {
             return "buzz".concat(result);
         } else if (isSameCharater) {
-            return "deluxe";
+            return result.trim();
         } else {
             return String.valueOf(number);
         }
