@@ -15,16 +15,16 @@ public class FizzBuzz {
         }
         boolean isSameCharater = set.size() == 1 && number > 10;
 
-        if (multiply3 && multiply5 && isSameCharater) {
-            return "fizz buzz deluxe";
-        } else if (multiply3 && multiply5) {
-            return "fizz buzz";
+        String result = isSameCharater ? " deluxe" : "";
+
+        if (multiply3 && multiply5) {
+            return "fizz buzz".concat(result);
         } else if (multiply3) {
-            return "fizz";
+            return "fizz".concat(result);
         } else if (multiply5) {
-            return "buzz";
+            return "buzz".concat(result);
         } else if (isSameCharater) {
-            return "deluxe";
+            return result;
         } else {
             return String.valueOf(number);
         }

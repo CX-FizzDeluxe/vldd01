@@ -14,5 +14,14 @@ public class FizzBuzzTest {
     public void fizzBuzzTest() {
         String result = FizzBuzz.fizzBuzz(11);
         Assert.assertEquals("deluxe", result);
+
+        result = FizzBuzz.fizzBuzz(33);
+        Assert.assertEquals("fizz deluxe", result);
+
+        result = FizzBuzz.fizzBuzz(222);
+        Assert.assertEquals("fizz deluxe", result);
+
+        result = FizzBuzz.fizzBuzz(777);
+        Assert.assertEquals("fizz deluxe", result);
     }
 }
